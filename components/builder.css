@@ -1,0 +1,11 @@
+.builder {
+    height: 200px;
+    width: 100%;
+    background : linear-gradient(#eeffcc, #ccff66);
+    margin-top: 350px;
+    padding: 5%;
+}
+.block {
+    margin-left: 40%;
+    display: block;
+}
