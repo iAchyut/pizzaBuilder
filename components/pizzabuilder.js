@@ -1,31 +1,61 @@
-import React, {useState} from 'react';
-import Classes from './pizzabuilder.css'
+import React, {useState,useContext, useEffect} from 'react';
 import Builder from './builder'
+import Ingredient from './ingredients'
+import classes from './pizzabuilder.module.css'
+import {PizzaContext} from './context/pizzaContext'
+import LoginModal from './LoginModal/loginModal'
+import OrderModal from './OrderModal/orderModal'
 
 export default Pizzabuilder  => {
-    
-    const [ingredients, setIngredients] = useState([{cheese:0,tomato:0,pineApple:0,oregano:0}])
+
+    useEffect( () => {
+        console.log("Hello from useEffect");
+    }, [])
+
+    const [modalOpen, setModalOpen] = useState(false)
+    const [orderModal, setOrderModal] = useState(false)
+
+    const pizzaContext = useContext(PizzaContext)
+    let ing = Object.keys(pizzaContext.ings).map(ingName => {
+        return pizzaContext.ings[ingName]? <Ingredient type={ingName} key={ingName}/> : null
+    })
+   
+    const addIngredientHandler = (key) => {
+        console.log(key)
+     pizzaContext.changeIng(key,true)
+    }
+
+    const removeIngredientHandler = (key) => {
+        console.log(key)
+     pizzaContext.changeIng(key,false)
+    }
+
+const clickedModal = () => {
+    setModalOpen(!modalOpen)
+    }
+const stopPropgation = (e) => {
+    e.stopPropagation();
+}
+
+const clickedOrderModal = () => {
+    setOrderModal(!orderModal)
+    }
+const stopPropgationOrderModal = (e) => {
+    e.stopPropagation();
+}
 
     return (
         <div>
+            {(orderModal ? <OrderModal orderModalClicked={clickedOrderModal} orderBoxClicked={stopPropgationOrderModal} /> : null)}
+             {(modalOpen ? <LoginModal clickedModal={clickedModal} stopPropgation={stopPropgation}/> : null)}
             <p>Start Building your delicious Pizza</p>
-            <div className="base">
-            <div className="cheese">
-            <div className="tomato"></div>
-            <div className="tomato2"></div>
-            <div className="pineApple"></div>
-            <div className="pineApple2"></div>
-            <div className="oregano"></div>
-            <div className="oregano"></div>
-            <div className="oregano1"></div>
-            <div className="oregano2"></div>
-            <div className="oregano3"></div>
-            <div className="oregano4"></div>
-            <div className="oregano5"></div>
-            <div className="oreganomid"></div>
-            </div>
-            </div>
-         <Builder ingredients={ingredients}/>
+            <button style={{float:"right", height:"20px", width:"50px"}} onClick={clickedModal}>Login</button>
+    <p>Total Cost of Pizza :{pizzaContext.tPrice}</p>
+            <div className={classes.Base}>
+                {ing}
+            </div> 
+          
+         <Builder addIng={addIngredientHandler} removeIng={removeIngredientHandler} orderModelClicked={clickedOrderModal}/>
 
         </div>
     );

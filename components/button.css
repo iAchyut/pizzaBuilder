@@ -2,7 +2,8 @@
     background-color :orange;
     height: 30px;
     width: 60px;
-    top: 270px;
-    left: 200px;
-    border-radius: 0%;
+    /* top: 270px;
+    left: 200px; */
+    border-radius: 20%;
+    margin-left: 2%;
 }

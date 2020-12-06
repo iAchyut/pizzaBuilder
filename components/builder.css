@@ -1,11 +1,14 @@
 .builder {
-    height: 200px;
+    height: 150px;
     width: 100%;
     background : linear-gradient(#eeffcc, #ccff66);
     margin-top: 350px;
     padding: 5%;
 }
 .block {
+    margin-top: -50px;
+    height: 120%;
     margin-left: 40%;
-    display: block;
+    padding: 0%;
+    /* display: block; */
 }
