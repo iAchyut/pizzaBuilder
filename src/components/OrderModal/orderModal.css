@@ -1,0 +1,30 @@
+.orderModal {
+    height: 100%;
+    width:  100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+    position: absolute;
+}
+
+.orderBox {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    z-index: 20;
+    background-color: white;
+    
+}
+
+.buttonContinue{
+    position:relative;
+    bottom: -35%;
+    right:5%;
+    margin: 2%;
+}
+.buttonCancel{
+    position:relative;
+    bottom: -35%;
+    right:5%;
+}

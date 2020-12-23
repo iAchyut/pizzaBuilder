@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Pizzabuilder from './components/pizzabuilder'
+import {Switch, Route, BrowserRouter, withRouter} from 'react-router-dom'
+import LoginModal from './components/LoginModal/loginModal'
+import {PizzaContext} from './components/context/pizzaContext'
+import React, {useContext} from 'react'
 
 function App() {
+  const pizzaContext = useContext(PizzaContext)
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     
+      <BrowserRouter>
+      <Switch>
+          <Route path="/login">
+            <Pizzabuilder />
+          </Route>
+          <Route path="/">
+          <Pizzabuilder />
+          </Route>
+        </Switch>
+     </BrowserRouter>
+   </div>
   );
 }
 
-export default App;
+export default (App);

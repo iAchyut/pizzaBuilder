@@ -1,0 +1,170 @@
+.Base {
+    width : 300px;
+    height : 300px;
+    border-radius : 200px;
+    background : radial-gradient(#ffcc99, #e67300);
+     box-shadow: inset -2px -3px #c9c9c9;
+    margin: auto;
+    align-items: center;
+    position: fixed;
+    margin-left: 10%;
+    z-index: 0;
+  }
+  .Cheese {
+    width : 80%;
+    height : 80%;
+    border-radius : 200px;
+    background: radial-gradient(#ffff99, #ffff1a);
+    margin-top : 10%;
+    margin-left: 10%;
+    position: absolute;
+  }
+  .Tomato {
+    width : 20%;
+    height : 20%;
+    border-radius : 200px;
+    background: radial-gradient(#ff9999, #ff3333);
+    margin-top : 20%;
+    margin-left: 20%;
+    position: absolute;
+  }
+  .Tomato:after {
+    content: "";
+    width : 100%;
+    height : 100%;
+    border-radius : 200px;
+    background: radial-gradient(#ff9999, #ff3333);
+    margin-top : 0%;
+    margin-left: 180%;
+    position: absolute;
+  }
+  .Tomato:before {
+    content: "";
+    width : 100%;
+    height : 100%;
+    border-radius : 200px;
+    background: radial-gradient(#ff9999, #ff3333);
+    margin-top : 200%;
+    margin-left: 180%;
+    position: absolute;
+  }
+  .Tomato2 {
+    width : 20%;
+    height : 20%;
+    border-radius : 200px;
+    background: radial-gradient(#ff9999, #ff3333);
+    margin-top : 60%;
+    margin-left: 20%;
+    position: absolute;
+  }
+  .pineApple {
+    width : 20%;
+    height : 20%;
+    border-radius : 200px;
+    background: radial-gradient(#ffff00, #999900);
+    margin-top : 40%;
+    margin-left: 10%;
+    position: absolute;
+  }
+  .pineApple:after {
+    content:"";
+    width : 100%;
+    height : 100%;
+    border-radius : 200px;
+    background: radial-gradient(#ffff00, #999900);
+    margin-top : 170%;
+    margin-left: 140%;
+    position: absolute;
+  }
+  .pineApple:before {
+    content:"";
+    width : 100%;
+    height : 100%;
+    border-radius : 200px;
+    background: radial-gradient(#ffff00, #999900);
+    margin-top : -170%;
+    margin-left: 140%;
+    position: absolute;
+  }
+  .pineApple2 {
+    width : 20%;
+    height : 20%;
+    border-radius : 200px;
+    background: radial-gradient(#ffff00, #999900);
+    margin-top : 40%;
+    margin-left: 70%;
+    position: absolute;
+  }
+  .oregano {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 40%;
+    margin-left: 70%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oregano1 {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 10%;
+    margin-left: 70%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oregano2 {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 80%;
+    margin-left: 70%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oregano3 {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 50%;
+    margin-left: 30%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oregano4 {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 90%;
+    margin-left: 30%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oregano5 {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 10%;
+    margin-left: 30%;
+    position: absolute;
+    display: inline-block;
+  }
+  .oreganomid {
+    width : 2%;
+    height : 2%;
+    border-radius : 200px;
+  background: radial-gradient(#cc9966, #4d3319);
+    margin-top : 50%;
+    margin-left: 50%;
+    position: absolute;
+    display: inline-block;
+  }
+  
+  
+  

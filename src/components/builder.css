@@ -1,0 +1,31 @@
+/* .builder {
+    height: 150px;
+    width: 100%;
+    background : linear-gradient(#eeffcc, #ccff66);
+    margin-top: 350px;
+    padding: 5%;
+}
+.block {
+    margin-top: -50px;
+    height: 120%;
+    margin-left: 40%;
+    padding: 0%;
+    /* display: block; */
+
+
+.builder {
+    height: 250px;
+    width: 20%;
+    background-color: #ccc;
+    padding: 2%;
+    margin: auto;
+    float: right;
+    margin-right: 15%;
+    border-radius: 2rem;
+    overflow : hidden;
+}
+.block {
+    
+    height: 120%;
+    margin: auto;
+}

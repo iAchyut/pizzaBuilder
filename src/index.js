@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PizzaContextProvider from './components/context/pizzaContext'
 
 ReactDOM.render(
   <React.StrictMode>
+    <PizzaContextProvider>
     <App />
+    </PizzaContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
